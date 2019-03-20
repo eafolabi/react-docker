@@ -9,10 +9,10 @@ script:
   - docker run eafolabi/react-docker npm run test -- --coverage
 deploy:
    provider: elasticbeanstalk
-   region: "us-west-1"
+   region: "us-east-1"
    app: "docker-react"
-   env: "docker-env"
-   bucket_name: "elasticbeanstalk-us-west-1-787818799103"
+   env: "DockerReact-env"
+   bucket_name: "elasticbeanstalk-us-east-1-787818799103"
    bucket_path: "docker-react"
    on:
      branch: master
